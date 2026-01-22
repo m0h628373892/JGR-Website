@@ -1,0 +1,118 @@
+:root {
+    --emerald: #064E3B;
+    --gold: #D4AF37;
+    --cream: #FFFDF5;
+    --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Garamond', serif, 'Segoe UI';
+    background-color: var(--cream);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--emerald);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 4px solid var(--gold);
+}
+
+.sidebar a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--gold);
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.sidebar a:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    padding-left: 45px;
+}
+
+.open-btn {
+    font-size: 25px;
+    cursor: pointer;
+    background: var(--emerald);
+    color: var(--gold);
+    padding: 12px 18px;
+    border: 2px solid var(--gold);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Hero & Headers */
+header {
+    background: linear-gradient(rgba(6, 78, 59, 0.85), rgba(6, 78, 59, 0.85)), 
+                url('https://images.unsplash.com/photo-1590073844006-3a44a721c210?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    color: var(--gold);
+    padding: 120px 20px;
+    text-align: center;
+    border-bottom: 6px double var(--gold);
+}
+
+header h1 { font-size: 3.5rem; margin: 0; letter-spacing: 3px; }
+header p { font-style: italic; font-size: 1.2rem; }
+
+/* Content Layout */
+.container {
+    max-width: 1000px;
+    margin: -50px auto 50px auto;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--gold);
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+h2 { color: var(--emerald); border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+
+ul { list-style: none; padding: 0; }
+ul li { padding: 10px 0; border-bottom: 1px dotted #ccc; }
+ul li::before { content: "◈ "; color: var(--gold); margin-right: 10px; }
+
+/* Footer */
+footer {
+    background: var(--emerald);
+    color: var(--gold);
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 5px solid var(--gold);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
