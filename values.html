@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Values & Impact | JGR College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" style="font-size: 36px; text-align: right;">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="headteacher.html">Headteacher</a>
+        <a href="values.html">Values & Impact</a>
+    </div>
+    <button class="open-btn" onclick="openNav()">&#9776;</button>
+
+    <header>
+        <h1>Values & Impact</h1>
+        <p>Rooted in Tradition, Serving the Community</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Our Doctrine</h2>
+            <p>Our values and teachings are strictly in line with the doctrine set by <strong>Imam Ahmed Rida Khan</strong> and the pious predecessors (Salaf al-Salihin). We believe in a balanced, traditional approach to Islam that emphasizes love for the Prophet (saw) and adherence to the Shari'ah.</p>
+        </div>
+        <div class="card">
+            <h2>Regional Impact</h2>
+            <p>By the grace of Allah Almighty, JGR College graduates are now leading young scholars and Imams in Masjids throughout the <strong>North West</strong>. Our impact is seen in the pulpits and classrooms across the region, where our students continue the work of serving the deen.</p>
+        </div>
+    </div>
+    <script>
+        function openNav() { document.getElementById("mySidebar").style.width = "280px"; }
+        function closeNav() { document.getElementById("mySidebar").style.width = "0"; }
+    </script>
+</body>
+</html>
