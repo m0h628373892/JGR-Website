@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JGR College | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" style="font-size: 36px; text-align: right;">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="headteacher.html">Headteacher</a>
+        <a href="values.html">Values & Impact</a>
+    </div>
+
+    <button class="open-btn" onclick="openNav()">&#9776;</button>
+
+    <header>
+        <h1>JGR COLLEGE</h1>
+        <p>Serving the Deen for over 10 Years</p>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h2>Welcome to JGR College</h2>
+            <p>For over a decade, JGR College has been a dedicated sanctuary for Islamic learning. We pride ourselves on being an institution that has been serving the deen for over 10 years, fostering an environment of spiritual growth and academic excellence.</p>
+            <p>Our curriculum is designed to root students in the classical sciences while preparing them to be compassionate leaders in their local communities.</p>
+        </section>
+    </div>
+
+    <footer><p>&copy; 2026 JGR College | Preserving the Sacred Tradition</p></footer>
+
+    <script>
+        function openNav() { document.getElementById("mySidebar").style.width = "280px"; }
+        function closeNav() { document.getElementById("mySidebar").style.width = "0"; }
+    </script>
+</body>
+</html>
