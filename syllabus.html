@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Syllabus | JGR College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" style="font-size: 36px; text-align: right;">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="headteacher.html">Headteacher</a>
+        <a href="values.html">Values & Impact</a>
+    </div>
+    <button class="open-btn" onclick="openNav()">&#9776;</button>
+
+    <header>
+        <h1>Our Syllabus</h1>
+        <p>A comprehensive journey through the Sacred Sciences</p>
+    </header>
+
+    <div class="container">
+        <div class="card" style="animation-delay: 0.1s;">
+            <h2>Fiqh (Islamic Jurisprudence)</h2>
+            <ul>
+                <li>Nur ul Idah</li><li>Quduri</li><li>Usul al Shashi</li><li>Sharh Al Wiqayah</li><li>Hidayah</li>
+            </ul>
+        </div>
+        <div class="card" style="animation-delay: 0.3s;">
+            <h2>Hadith & Tafsir</h2>
+            <p><strong>Hadith:</strong> Mukhtasar Riyadh al Saliheen, Mishkaat al Masabih, Muwatta Imam Muhammad, Sahih al Bukhari</p>
+            <p><strong>Tafsir:</strong> Tafsir al Jalalayn</p>
+        </div>
+        <div class="card" style="animation-delay: 0.5s;">
+            <h2>Arabic Grammar (Nahw & Sarf)</h2>
+            <ul>
+                <li>Imdad ul Nahw & Imdad ul Sarf</li><li>Nahw Mir</li><li>Hidayahtun Nahw</li><li>Kafiyah</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function openNav() { document.getElementById("mySidebar").style.width = "280px"; }
+        function closeNav() { document.getElementById("mySidebar").style.width = "0"; }
+    </script>
+</body>
+</html>
