@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headteacher | JGR College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" style="font-size: 36px; text-align: right;">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="headteacher.html">Headteacher</a>
+        <a href="values.html">Values & Impact</a>
+    </div>
+    <button class="open-btn" onclick="openNav()">&#9776;</button>
+
+    <header>
+        <h1>Our Headteacher</h1>
+        <p>Academic Excellence & Spiritual Guidance</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>A Lifetime of Teaching</h2>
+            <p>Our Headteacher has been teaching for over 25 years, dedicated to the cultivation of students of knowledge. He is a graduate of the prestigious Islamic University, <strong>Al Jamia Ashrafiyah Mubarakpur</strong>.</p>
+            <p>As a master of the Islamic sciences, he provides expert instruction in:</p>
+            <ul>
+                <li>Fiqh (Jurisprudence)</li>
+                <li>Hadith (Prophetic Traditions)</li>
+                <li>Tafsir (Exegesis)</li>
+                <li>Arabic Grammar</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function openNav() { document.getElementById("mySidebar").style.width = "280px"; }
+        function closeNav() { document.getElementById("mySidebar").style.width = "0"; }
+    </script>
+</body>
+</html>
